@@ -1,0 +1,33 @@
+[package]
+name = "icicle-playground"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hex = "0.4"
+rand = "0.8"
+clap = { version = "<=4.4.12", features = ["derive"] }
+icicle-runtime = { git = "https://github.com/ingonyama-zk/icicle.git", branch = "main" }
+icicle-core = { git = "https://github.com/ingonyama-zk/icicle.git", branch = "main" }
+icicle-babybear = { git = "https://github.com/ingonyama-zk/icicle.git", branch = "main" }
+icicle-hash = { git = "https://github.com/ingonyama-zk/icicle.git", branch = "main" }
+icicle-m31 = { git = "https://github.com/ingonyama-zk/icicle.git", branch = "main" }
+
+[features]
+cuda = [
+    "icicle-runtime/cuda_backend",
+    "icicle-babybear/cuda_backend",
+    "icicle-hash/cuda_backend",
+]
+
+metal = [
+    "icicle-runtime/metal_backend",
+    "icicle-babybear/metal_backend",
+    "icicle-hash/metal_backend",
+]
+
+vulkan = [
+    "icicle-runtime/vulkan_backend",
+    "icicle-babybear/vulkan_backend",
+    "icicle-hash/vulkan_backend",
+]
