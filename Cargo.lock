@@ -194,6 +194,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "icicle-bls12-381"
+version = "3.4.0"
+source = "git+https://github.com/ingonyama-zk/icicle.git?branch=main#33d586e3eade412071caba5958cd5e42f75b15fe"
+dependencies = [
+ "cmake",
+ "icicle-core",
+ "icicle-hash",
+ "icicle-runtime",
+]
+
+[[package]]
 name = "icicle-core"
 version = "3.4.0"
 source = "git+https://github.com/ingonyama-zk/icicle.git?branch=main#33d586e3eade412071caba5958cd5e42f75b15fe"
@@ -234,6 +245,7 @@ dependencies = [
  "clap",
  "hex",
  "icicle-babybear",
+ "icicle-bls12-381",
  "icicle-core",
  "icicle-hash",
  "icicle-m31",

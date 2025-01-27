@@ -12,6 +12,7 @@ icicle-core = { git = "https://github.com/ingonyama-zk/icicle.git", branch = "ma
 icicle-babybear = { git = "https://github.com/ingonyama-zk/icicle.git", branch = "main" }
 icicle-hash = { git = "https://github.com/ingonyama-zk/icicle.git", branch = "main" }
 icicle-m31 = { git = "https://github.com/ingonyama-zk/icicle.git", branch = "main" }
+icicle-bls12-381 = { git = "https://github.com/ingonyama-zk/icicle.git", branch = "main" }
 
 [features]
 cuda = [
